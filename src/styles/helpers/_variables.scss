@@ -1,0 +1,107 @@
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 20px;
+$spacing-2xl: 24px;
+$spacing-3xl: 32px;
+$spacing-4xl: 40px;
+$spacing-5xl: 48px;
+$spacing-6xl: 60px;
+
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-xl: 10px;
+$radius-2xl: 12px;
+$radius-full: 9999px;
+
+$text-xs: 12px;
+$text-sm: 13px;
+$text-base: 14px;
+$text-lg: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 24px;
+
+$leading-tight: 1.25;
+$leading-normal: 1.5;
+$leading-relaxed: 1.75;
+
+$tracking-tight: -0.025em;
+$tracking-normal: 0;
+$tracking-wide: 0.025em;
+$tracking-wider: 0.05em;
+
+$z-dropdown: 10;
+$z-sticky: 20;
+$z-fixed: 30;
+$z-modal-backdrop: 40;
+$z-modal: 50;
+$z-popover: 60;
+$z-tooltip: 70;
+$z-toast: 80;
+
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+$container-sm: 640px;
+$container-md: 768px;
+$container-lg: 1024px;
+$container-xl: 1280px;
+$container-2xl: 1400px;
+$btn-height-sm: 28px;
+$btn-height-md: 32px;
+$btn-height-lg: 36px;
+$btn-height-xl: 40px;
+
+$input-height-sm: 28px;
+$input-height-md: 32px;
+$input-height-lg: 36px;
+$input-height-xl: 40px;
+
+$icon-xs: 12px;
+$icon-sm: 14px;
+$icon-md: 16px;
+$icon-lg: 18px;
+$icon-xl: 20px;
+$icon-2xl: 24px;
+$icon-3xl: 32px;
+$icon-4xl: 48px;
+$icon-5xl: 60px;
+
+$avatar-sm: 24px;
+$avatar-md: 32px;
+$avatar-lg: 40px;
+$avatar-xl: 48px;
+
+$header-height: 48px;
+$sidebar-width: 256px;
+$sidebar-collapsed-width: 64px;
+$content-padding: $spacing-2xl;
+$content-padding-sm: $spacing-lg;
+
+$shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+$shadow-focus: 0 0 0 3px rgba(59, 130, 246, 0.1);
+$shadow-error: 0 0 0 3px rgba(239, 68, 68, 0.1);
+$shadow-success: 0 0 0 3px rgba(16, 185, 129, 0.1);
+
+$transition-fast: 150ms ease-in-out;
+$transition-normal: 200ms ease-in-out;
+$transition-slow: 300ms ease-in-out;
+
+$border-width: 1px;
+$border-width-2: 2px;
+$border-width-4: 4px;
+
+$outline-width: 2px;
+$outline-offset: 2px;

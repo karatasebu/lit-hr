@@ -1,0 +1,123 @@
+.app-header {
+  height: $header-height;
+  width: 100%;
+  max-width: $container-2xl;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $spacing-2xl;
+  border-bottom: $border-width solid $border-light;
+  background: $bg-white;
+  position: relative;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    color: $text-primary;
+    font-weight: 600;
+    font-size: $text-base;
+    z-index: $z-sticky;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // Mobile menu button - hidden on desktop, visible on mobile
+  button-element[icon="menu"] {
+    display: none;
+    z-index: $z-sticky;
+
+    @media (max-width: $breakpoint-md) {
+      display: flex;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: $spacing-lg;
+
+    // Desktop: normal horizontal layout
+    @media (min-width: 769px) {
+      display: flex;
+    }
+
+    // Mobile: hidden by default, shown when --open class is applied
+    @media (max-width: $breakpoint-md) {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: $bg-white;
+      border-bottom: $border-width solid $border-light;
+      box-shadow: $shadow-sm;
+      z-index: $z-dropdown;
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: $transition-slow;
+      flex-direction: column;
+      padding: $spacing-lg $spacing-2xl;
+      gap: $spacing-lg;
+
+      &.--open {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      gap: $spacing-sm;
+      width: 100%;
+    }
+  }
+
+  &__flags {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+
+    @media (max-width: $breakpoint-md) {
+      justify-content: center;
+    }
+  }
+
+  &__flag {
+    cursor: pointer;
+    padding: $spacing-xs;
+    border-radius: $radius-md;
+    transition: $transition-fast;
+    
+    &:hover {
+      background-color: rgba(255, 98, 0, 0.1);
+    }
+    
+    &.--active {
+      background-color: #fff4e6 !important;
+      border: $border-width solid $primary-orange-pale !important;
+    }
+  }
+
+  // Responsive padding adjustments
+  @media (max-width: $breakpoint-md) {
+    padding: 0 $spacing-lg;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 0 $spacing-md;
+  }
+}
+

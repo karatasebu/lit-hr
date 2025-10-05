@@ -1,0 +1,18 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.--orange {
+    color: $primary-orange;
+  }
+
+  &.--orange-pale {
+    color: $primary-orange-pale;
+  }
+}

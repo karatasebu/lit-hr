@@ -1,0 +1,123 @@
+:host {
+  display: inline-block;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  border: none;
+  border-radius: $radius-md;
+  font-family: inherit;
+  font-size: $text-base;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: $transition-fast;
+  text-decoration: none;
+  outline: none;
+
+  &:focus-visible {
+    outline: $outline-width solid $blue-500;
+    outline-offset: $outline-offset;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.--primary {
+    background: $primary-orange;
+    color: $bg-white;
+    border: $border-width solid $primary-orange;
+
+    &:hover:not(:disabled) {
+      background: $primary-orange-hover;
+    }
+  }
+
+  &.--secondary {
+    background: $gray-100;
+    color: $text-secondary;
+    border: $border-width solid $border-medium;
+
+    &:hover:not(:disabled) {
+      background: $gray-200;
+    }
+  }
+
+  &.--ghost {
+    background: transparent;
+    color: $text-muted;
+
+    &:hover:not(:disabled) {
+      background: $gray-50;
+      color: $text-secondary;
+    }
+  }
+
+  &.--orange {
+    background: transparent;
+    color: $primary-orange;
+
+    &:hover:not(:disabled) {
+      background: rgba(255, 98, 0, 0.1);
+      color: $primary-orange-hover;
+    }
+  }
+
+  &.--orange-pale {
+    background: transparent;
+    color: $primary-orange-pale;
+
+    &:hover:not(:disabled) {
+      background: rgba(255, 98, 0, 0.05);
+      color: $primary-orange;
+    }
+  }
+
+  &.--sm {
+    padding: $spacing-sm $spacing-md;
+    font-size: $text-xs;
+  }
+
+  &.--md {
+    padding: $spacing-sm $spacing-lg;
+    font-size: $text-base;
+  }
+
+  &.--lg {
+    padding: $spacing-md $spacing-xl;
+    font-size: $text-lg;
+  }
+
+  /* Just icon button - square dimensions */
+  &.--just-icon {
+    padding: $spacing-sm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Shapes */
+  &.--circle {
+    border-radius: $radius-full;
+    padding: 0;
+    width: $btn-height-md;
+    height: $btn-height-md;
+  }
+  &.--sm.button.--circle {
+    width: $btn-height-sm;
+    height: $btn-height-sm;
+  }
+  &.--md.button.--circle {
+    width: $btn-height-md;
+    height: $btn-height-md;
+  }
+  &.--lg.button.--circle {
+    width: $btn-height-lg;
+    height: $btn-height-lg;
+  }
+}

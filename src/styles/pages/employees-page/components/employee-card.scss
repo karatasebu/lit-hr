@@ -1,0 +1,44 @@
+.employee-card {
+  border: $border-width solid $border-light;
+  border-radius: $radius-lg;
+  background: $bg-white;
+  padding: $spacing-lg;
+  box-shadow: $shadow-sm;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-lg;
+    margin-bottom: $spacing-md;
+    
+    @media (max-width: $breakpoint-sm) {
+      grid-template-columns: 1fr;
+      gap: $spacing-sm;
+      margin-bottom: $spacing-sm;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+
+    span {
+      font-size: $text-xs;
+      color: $text-muted;
+    }
+
+    strong {
+      font-size: $text-base;
+      color: $text-primary;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    margin-top: $spacing-sm;
+  }
+}
+

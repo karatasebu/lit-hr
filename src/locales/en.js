@@ -1,0 +1,78 @@
+export const translations = {
+  // Form fields
+  firstName: 'First Name',
+  lastName: 'Last Name',
+  dateOfEmployment: 'Date of Employment',
+  dateOfBirth: 'Date of Birth',
+  phone: 'Phone',
+  email: 'Email',
+  department: 'Department',
+  position: 'Position',
+
+  // Position options
+  select: 'Select',
+  junior: 'Junior',
+  senior: 'Senior',
+  manager: 'Manager',
+  specialist: 'Specialist',
+  analyst: 'Analyst',
+
+  // Actions
+  edit: 'Edit',
+  delete: 'Delete',
+  close: 'Close',
+  proceed: 'Proceed',
+  cancel: 'Cancel',
+  previous: 'Previous',
+  next: 'Next',
+  actions: 'Actions',
+  save: 'Save',
+  saving: 'Saving...',
+  selectOption: 'Select an option',
+
+  // Navigation
+  employees: 'Employees',
+  addNew: 'Add New',
+  employeeList: 'Employee List',
+  noEmployees: 'No Employees Found',
+  noEmployeesMessage:
+    'There are no employees in the system. Add your first employee to get started.',
+  addFirstEmployee: 'Add First Employee',
+
+  // Messages
+  areYouSure: 'Are you sure?',
+  selectedEmployeeRecord: 'Selected Employee record of',
+  willBeDeleted: 'will be deleted!',
+  deleteSelected: 'Delete Selected',
+  selectedEmployeesWillBeDeleted: 'selected employees will be deleted!',
+  pleaseFixErrors: 'Please fix the errors below!',
+  recordUpdated: 'Record updated',
+  recordCreated: 'Record created',
+  recordDeleted: 'Record deleted',
+  recordsDeleted: 'Records deleted!',
+  errorSavingEmployee: 'Error saving employee. Please try again.',
+  editEmployee: 'Edit Employee',
+  addEmployee: 'Add Employee',
+
+  // Validation messages
+  firstNameRequired: 'First name is required.',
+  firstNameMinLength: 'First name must be at least 2 characters.',
+  firstNameMaxLength: 'First name must be less than 50 characters.',
+  lastNameRequired: 'Last name is required.',
+  lastNameMinLength: 'Last name must be at least 2 characters.',
+  lastNameMaxLength: 'Last name must be less than 50 characters.',
+  emailRequired: 'Email is required.',
+  emailInvalid: 'Please enter a valid email address.',
+  emailMaxLength: 'Email must be less than 100 characters.',
+  phoneRequired: 'Phone number is required.',
+  phoneInvalid: 'Please enter a valid phone number.',
+  dateOfEmploymentRequired: 'Date of employment is required.',
+  dateInvalid: 'Please enter a valid date.',
+  dateOfBirthRequired: 'Date of birth is required.',
+  ageMinimum: 'Employee must be at least 18 years old.',
+  departmentRequired: 'Department is required.',
+  departmentMinLength: 'Department must be at least 2 characters.',
+  departmentMaxLength: 'Department must be less than 50 characters.',
+  positionRequired: 'Position is required.',
+  positionInvalid: 'Please select a valid position.',
+}

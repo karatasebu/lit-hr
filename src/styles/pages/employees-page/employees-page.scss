@@ -1,0 +1,62 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.employees-page {
+  padding: 0 $spacing-2xl;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $spacing-2xl;
+  }
+
+  &__title {
+    font-size: $text-3xl;
+    font-weight: 600;
+    color: $primary-orange;
+    margin: 0;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+  }
+
+  &__content {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .employee-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: $spacing-2xl;
+    
+    @media (max-width: $breakpoint-md) {
+      grid-template-columns: 1fr;
+      gap: $spacing-lg;
+    }
+  }
+
+  &__pagination {
+    margin-top: auto;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: 0 $spacing-lg;
+    
+    &__header {
+      margin-bottom: $spacing-lg;
+    }
+    
+    &__title {
+      font-size: $text-2xl;
+    }
+  }
+}

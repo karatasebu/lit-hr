@@ -1,0 +1,106 @@
+:host {
+  display: block;
+}
+
+.input {
+  width: 100%;
+  border: $border-width solid $border-medium;
+  border-radius: $radius-md;
+  font-family: inherit;
+  font-size: $text-base;
+  line-height: $leading-normal;
+  color: $text-secondary;
+  background-color: $bg-white;
+  transition: $transition-fast;
+  outline: none;
+
+  /* Date input specific interactions */
+  &[type="date"] {
+    &:hover:not(:disabled) {
+      cursor: pointer;
+    }
+  }
+
+  &:focus {
+    border-color: $border-focus;
+    box-shadow: $shadow-focus;
+  }
+
+  &:disabled {
+    background-color: $gray-50;
+    color: $text-disabled;
+    cursor: not-allowed;
+  }
+
+  &::placeholder {
+    color: $text-disabled;
+  }
+
+  /* Variants */
+  &.--default {
+    border-color: $border-medium;
+    
+    &:hover:not(:disabled) {
+      border-color: $gray-400;
+    }
+  }
+
+  &.--error {
+    border-color: $error-500;
+    
+    &:focus {
+      border-color: $error-500;
+      box-shadow: 0 0 0 3px $shadow-error;
+    }
+  }
+
+  &.--success {
+    border-color: $success-500;
+    
+    &:focus {
+      border-color: $success-500;
+      box-shadow: 0 0 0 3px $shadow-success;
+    }
+  }
+
+  /* Sizes */
+  &.--sm {
+    padding: $spacing-sm $spacing-md;
+    font-size: $text-xs;
+  }
+
+  &.--md {
+    padding: $spacing-sm $spacing-md;
+    font-size: $text-base;
+    height: $input-height-xl;
+    box-sizing: border-box;
+  }
+
+  &.--lg {
+    padding: $spacing-md $spacing-lg;
+    font-size: $text-lg;
+  }
+}
+
+.input__label {
+  display: block;
+  margin-bottom: $spacing-sm;
+  font-size: $text-base;
+  font-weight: 500;
+  color: $text-secondary;
+  line-height: 1.4;
+}
+
+.input__required {
+  color: $error-500;
+  font-weight: 600;
+}
+
+.input__error {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: $error-500;
+  line-height: 1.4;
+  font-weight: 400;
+}

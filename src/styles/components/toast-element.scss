@@ -1,0 +1,56 @@
+:host {
+  position: fixed;
+  inset: 24px 0 auto 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.toast {
+  min-width: 280px;
+  max-width: min(92vw, 560px);
+  color: $toast-success-text;
+  background: $toast-success-bg;
+  border: 1px solid $toast-success-border;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 24px $shadow-md;
+  transform: translateY(-16px);
+  opacity: 0;
+  transition: transform 240ms ease, opacity 240ms ease;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  pointer-events: auto;
+
+  // Open state
+  &.--open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  // Success variant
+  &.--success {
+    background: $toast-success-bg;
+    border-color: $toast-success-border;
+    color: $toast-success-text;
+  }
+
+  // Error variant
+  &.--error {
+    background: $toast-error-bg;
+    border-color: $toast-error-border;
+    color: $toast-error-text;
+  }
+
+  // Message element
+  &__message {
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+  }
+}
+
+

@@ -1,0 +1,38 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+/dist/
+/build/
+/.vite/
+.vite-ssg-temp/
+
+# Coverage
+coverage/
+*.lcov
+*.lcov.info
+
+# Logs
+logs
+*.log
+
+# Editor and OS files
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Env files
+.env
+.env.*.local
+
+# Lockfiles (keep one as source of truth)
+# Uncomment to ignore others if desired
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

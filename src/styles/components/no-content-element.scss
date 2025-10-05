@@ -1,0 +1,32 @@
+.no-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-6xl $spacing-xl;
+  text-align: center;
+  min-height: 400px;
+
+  &__icon {
+    margin-bottom: $spacing-2xl;
+    opacity: 0.6;
+  }
+
+  &__content {
+    max-width: 400px;
+  }
+
+  &__title {
+    font-size: $text-3xl;
+    font-weight: 600;
+    color: $text-primary;
+    margin: 0 0 $spacing-md 0;
+  }
+
+  &__message {
+    font-size: $text-lg;
+    color: $text-muted;
+    margin: 0 0 $spacing-2xl 0;
+    line-height: $leading-normal;
+  }
+}

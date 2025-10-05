@@ -1,0 +1,63 @@
+.modal {
+  &__backdrop {
+    position: fixed;
+    inset: 0;
+    background: $bg-overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-lg;
+    z-index: $z-modal;
+  }
+
+  // Main modal container
+  & {
+    width: 100%;
+    background: $bg-white;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-lg;
+    overflow: hidden;
+  }
+
+  // Header section
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-lg $spacing-xl;
+    min-height: $spacing-5xl;
+
+    button-element {
+      flex-shrink: 0;
+    }
+  }
+
+  // Title
+  &__title {
+    margin: 0;
+    font-size: $text-xl;
+    font-weight: 700;
+    color: $primary-orange-light;
+  }
+
+  // Content section
+  &__content {
+    padding: 0 $spacing-xl $spacing-md $spacing-xl;
+    color: $text-muted;
+    font-size: $text-base;
+  }
+
+  // Footer section
+  &__footer {
+    display: flex;
+    gap: $spacing-md;
+    padding: $spacing-md $spacing-xl $spacing-xl $spacing-xl;
+
+    .button {
+      width: 100%;
+    }
+  }
+}
+
+
+

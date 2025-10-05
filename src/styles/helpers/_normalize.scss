@@ -1,0 +1,172 @@
+// Generic normalize styles for web components
+
+// Reset box-sizing, margin, padding
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Reset heading elements
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+// Reset list elements
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Reset link elements
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Reset button elements
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+// Reset input elements
+input, textarea, select {
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+// Reset image elements
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Reset table elements
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Reset form elements
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+// Reset details/summary
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+// Reset progress/meter
+progress, meter {
+  vertical-align: baseline;
+}
+
+// Reset hr
+hr {
+  border: none;
+  height: 0;
+  margin: 0;
+}
+
+// Reset pre/code
+pre, code {
+  font-family: monospace;
+  font-size: inherit;
+}
+
+// Reset address
+address {
+  font-style: normal;
+}
+
+// Reset blockquote
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+// Reset figure
+figure {
+  margin: 0;
+}
+
+// Reset figcaption
+figcaption {
+  font-size: inherit;
+}
+
+// Reset mark
+mark {
+  background: none;
+  color: inherit;
+}
+
+// Reset small
+small {
+  font-size: inherit;
+}
+
+// Reset sub/sup
+sub, sup {
+  font-size: inherit;
+  line-height: inherit;
+  position: static;
+}
+
+// Reset time
+time {
+  font-style: normal;
+}
+
+// Reset ruby
+ruby {
+  line-height: normal;
+}
+
+// Reset bdi/bdo
+bdi, bdo {
+  unicode-bidi: normal;
+}
+
+// Reset output
+output {
+  font: inherit;
+}
+
+// Reset template
+template {
+  display: none;
+}
+
+// Reset hidden
+[hidden] {
+  display: none !important;
+}

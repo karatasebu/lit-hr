@@ -1,0 +1,107 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: $radius-lg;
+  border: $border-width solid $border-light;
+  background: $bg-white;
+  
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+  font-size: $text-base;
+  line-height: $leading-normal;
+
+  &__header {
+    background: $gray-50;
+    border-bottom: $border-width solid $border-light;
+  }
+
+  &__header-row {
+    height: $spacing-5xl;
+  }
+
+  &__header-cell {
+    padding: $spacing-md $spacing-lg;
+    text-align: left;
+    font-weight: 600;
+    color: $primary-orange;
+    font-size: $text-sm;
+    letter-spacing: $tracking-wider;
+    white-space: nowrap;
+    min-width: 120px;
+
+    &--checkbox {
+      width: $spacing-5xl;
+      text-align: center;
+      padding: $spacing-md $spacing-sm;
+      min-width: $spacing-5xl;
+    }
+
+    &--actions {
+      width: 100px;
+      text-align: center;
+      min-width: 100px;
+    }
+  }
+
+  &__body {
+    background: $bg-white;
+  }
+
+  &__row {
+    border-bottom: $border-width solid $border-light;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background: $gray-50;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__cell {
+    padding: 12px 16px;
+    color: $text-secondary;
+    font-size: 14px;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &--checkbox {
+      width: 48px;
+      text-align: center;
+      padding: 12px 8px;
+    }
+
+    &--actions {
+      width: 100px;
+      text-align: center;
+      padding: 8px 16px;
+    }
+
+    &--name {
+      font-weight: 600;
+    }
+  }
+
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+}
